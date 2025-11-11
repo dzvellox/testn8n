@@ -1,0 +1,6 @@
+odoo.conf
+log/
+filestore/
+.git
+.gitignore
+.DS_Store
