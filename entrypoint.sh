@@ -16,7 +16,7 @@ exec odoo \
   --database="$DB_NAME" \
   --data-dir="/var/lib/odoo" \
   --http-port="${PORT:-8069}" \
-  --admin-passwd="${ADMIN_PASSWD}" \
+  --admin_passwd="${ADMIN_PASSWD}" \
   --without-demo=all \
   --proxy-mode \
   "$@"
