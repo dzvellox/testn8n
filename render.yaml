@@ -10,14 +10,14 @@ services:
       - key: PORT
         value: 8069
       - key: DB_HOST
-        sync: false
+        value: ep-divine-lab-a45nny5y-pooler.us-east-1.aws.neon.tech
       - key: DB_PORT
         value: 5432
       - key: DB_USER
-        sync: false
+        value: neondb_owner
       - key: DB_PASSWORD
-        sync: false
+        value: npg_wQPuv6cRdg7W
       - key: DB_NAME
-        value: odoo
+        value: yas
       - key: ADMIN_PASSWD
         generateValue: true
