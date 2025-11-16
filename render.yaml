@@ -19,5 +19,3 @@ services:
         value: npg_wQPuv6cRdg7W
       - key: DB_NAME
         value: yas
-      - key: ADMIN_PASSWD
-        generateValue: true
