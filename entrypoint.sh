@@ -8,15 +8,14 @@ echo "🔒 SSL Mode: ${PGSSLMODE:-require}"
 # Attendre un peu pour laisser le temps à la DB de répondre
 sleep 5
 
-# Lancer Odoo avec initialisation forcée de la base
+# Lancer Odoo SANS initialisation forcée
+# L'utilisateur créera la base via l'interface web
 exec odoo \
   --db_host="$DB_HOST" \
   --db_port="${DB_PORT:-5432}" \
   --db_user="$DB_USER" \
   --db_password="$DB_PASSWORD" \
-  --database="$DB_NAME" \
   --data-dir="/var/lib/odoo" \
   --http-port="${PORT:-8069}" \
   --proxy-mode \
-  --log-level=info \
-  -i base
+  --log-level=info
