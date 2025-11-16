@@ -13,10 +13,6 @@ services:
         value: odoo
       - key: POSTGRES_PASSWORD
         generateValue: true
-    disk:
-      name: postgres-data
-      mountPath: /var/lib/postgresql/data
-      sizeGB: 1
 
   # Application Odoo
   - type: web
@@ -54,7 +50,3 @@ services:
         value: odoo
       - key: ADMIN_PASSWD
         generateValue: true
-    disk:
-      name: odoo-data
-      mountPath: /var/lib/odoo
-      sizeGB: 1
