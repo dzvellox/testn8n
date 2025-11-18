@@ -18,7 +18,7 @@ services:
       - key: DB_USER
         # Assure-toi que cet utilisateur existe bien dans Supabase.
         # Sinon remets 'postgres' pour tester.
-        value: postgres 
+        value: odoo 
       - key: DB_PASSWORD
         value: SuperMDP2025!
       - key: DB_NAME
