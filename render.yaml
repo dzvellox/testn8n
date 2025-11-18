@@ -18,7 +18,7 @@ services:
       - key: DB_USER
         value: odoo
       - key: DB_PASSWORD
-        value: valSuCUEULtBgug8
+        value: SuperMDP2025
       - key: DB_NAME
         value: postgres
       - key: PGSSLMODE
