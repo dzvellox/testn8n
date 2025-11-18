@@ -20,7 +20,7 @@ services:
         # Sinon remets 'postgres' pour tester.
         value: postgres 
       - key: DB_PASSWORD
-        value: SuperMDP2025
+        value: SuperMDP2025!
       - key: DB_NAME
         value: postgres
       - key: PGSSLMODE
