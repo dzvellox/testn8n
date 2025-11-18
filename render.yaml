@@ -7,16 +7,18 @@ services:
     region: oregon
     dockerfilePath: ./Dockerfile
     envVars:
-      - key: DB_HOST_FORCE_IPV4
-        value: True  # <-- AJOUTEZ CETTE LIGNE valSuCUEULtBgug8
       - key: PORT
         value: 8069
       - key: DB_HOST
+        # Utilise la même adresse, mais on va changer le port
         value: db.gqcygmyvdhasltkxzjcm.supabase.co
       - key: DB_PORT
-        value: 5432
+        # LE CHANGEMENT EST ICI : Utilise le port du Pooler (IPv4 compatible)
+        value: 6543
       - key: DB_USER
-        value: odoo
+        # Assure-toi que cet utilisateur existe bien dans Supabase.
+        # Sinon remets 'postgres' pour tester.
+        value: postgres 
       - key: DB_PASSWORD
         value: SuperMDP2025
       - key: DB_NAME
